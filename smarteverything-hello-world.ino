@@ -4,7 +4,6 @@
 
 void setup() {
   SerialUSB.begin(115200);
-      while (!SerialUSB) {}
 
   SigFox.begin(19200);
   initSigfox();
