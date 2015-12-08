@@ -6,7 +6,7 @@ void setup() {
   SerialUSB.begin(115200);
 
   SigFox.begin(19200);
-  initSigfox();
+  delay(500);
   blink();
 }
 
@@ -23,17 +23,9 @@ void loop() {
   else{
     ledRedLight(HIGH);
   }
+  delay(2000);
+  resetLEDs();
   delay(DELAY);
-}
-void initSigfox(){
-  SigFox.print("+++");
-  while (!SigFox.available()){
-    delay(100);
-  }
-  while (SigFox.available()){
-    SerialUSB.print(SigFox.read());
-  }
-  SerialUSB.println("\n ** Setup OK **");
 }
 bool sendSigfox(String frame){
   String status = "";
