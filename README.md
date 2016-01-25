@@ -5,10 +5,11 @@ Using the [SmartEverything](http://smarteverything.it) Arduino board and its SIG
 
 ##Prerequisites
 ###SmartEverything
-Install the core Arduino libraries
-	* Tools > Boards > Board Manager
-	* Install the Arduino Zero core
-	* Install the ASME core (filter=Partner)
+Install the core Arduino libraries:  
+
+* Tools > Boards > Board Manager
+* Install the Arduino Zero core
+* Install the ASME core (filter=Partner)
 
 You should use the board type _Smart Everything FOX (Native USB)_
 
